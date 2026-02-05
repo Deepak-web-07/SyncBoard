@@ -11,7 +11,11 @@ import dotenv from "dotenv"
 dotenv.config()
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "*",
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"]
+}));
 app.use(bodyParser.json())
 const PORT = process.env.PORT || 5000;
 

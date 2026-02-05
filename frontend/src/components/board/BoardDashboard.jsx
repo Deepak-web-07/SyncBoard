@@ -33,7 +33,7 @@ const BoardDashboard = () => {
         const fetchBoards = async () => {
             try {
                 const res = await apiClient.get('/board/myBoards');
-                setBoards(res.data.boards);
+                setBoards(res.data.boards || []);
             } catch (error) {
                 console.error("Error fetching boards", error);
                 toast.error("Failed to load boards");
@@ -113,7 +113,7 @@ const BoardDashboard = () => {
 
                 {/* Boards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {boards.map(board => (
+                    {Array.isArray(boards) && boards.map(board => (
                         <div
                             key={board._id}
                             onClick={() => navigate(`/board/${board._id}`)}
