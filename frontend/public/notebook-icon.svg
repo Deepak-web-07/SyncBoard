@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Notebook Cover -->
+  <rect x="15" y="10" width="70" height="80" rx="5" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
+  
+  <!-- Paper Pages Edge -->
+  <path d="M85 15 Vin90 H20" stroke="white" stroke-width="2"/>
+  <rect x="20" y="15" width="60" height="70" rx="2" fill="#fff7ed" />
+
+  <!-- Lines on text -->
+  <line x1="30" y1="30" x2="70" y2="30" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+  <line x1="30" y1="45" x2="70" y2="45" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+  <line x1="30" y1="60" x2="70" y2="60" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Binding Spirals -->
+  <circle cx="15" cy="20" r="4" fill="#64748b" />
+  <circle cx="15" cy="35" r="4" fill="#64748b" />
+  <circle cx="15" cy="50" r="4" fill="#64748b" />
+  <circle cx="15" cy="65" r="4" fill="#64748b" />
+  <circle cx="15" cy="80" r="4" fill="#64748b" />
+</svg>
